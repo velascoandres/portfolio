@@ -1,1 +1,14 @@
-<p>about-me-route works!</p>
+<ng-container *transloco="let g; read('sections')">
+  <ng-container *transloco="let l; read('about')">
+      <h2 class="bits"># {{g('about-me')}}  </h2>
+      <div class="p-grid">
+        <div class="p-col-8">
+          <div class="quote">
+            <p>
+              {{l('description')}}
+            </p>
+          </div>
+        </div>
+      </div>
+  </ng-container>
+</ng-container>

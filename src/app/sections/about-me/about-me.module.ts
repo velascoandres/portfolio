@@ -18,7 +18,7 @@ import {
     AboutMeRoutingModule,
     TranslocoModule,
   ],
-  providers: [{provide: TRANSLOCO_SCOPE, useValue: 'about-me'}],
+  providers: [{provide: TRANSLOCO_SCOPE, useValue: 'about'}],
 })
 export class AboutMeModule {
 }
