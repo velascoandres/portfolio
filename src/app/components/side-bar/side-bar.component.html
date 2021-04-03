@@ -1,0 +1,48 @@
+<ng-container *transloco="let g; read('sections')">
+
+  <mat-drawer-container class="side-bar">
+    <mat-drawer mode="side" opened>
+
+      <app-lang-picker></app-lang-picker>
+
+      <app-side-item-option
+        [label]="g('about-me')"
+        link="/about-me"
+        (selectItem)="listenSelectedItem($event)"
+      >
+      </app-side-item-option>
+      <app-side-item-option
+        [label]="g('education')"
+        (selectItem)="listenSelectedItem($event)"
+        link="/education"
+      >
+      </app-side-item-option>
+      <app-side-item-option
+        [label]="g('experience')"
+        (selectItem)="listenSelectedItem($event)"
+        link="/experience"
+      >
+      </app-side-item-option>
+
+      <app-side-item-option
+        [label]="g('skills')"
+        (selectItem)="listenSelectedItem($event)"
+        link="/skills"
+      >
+      </app-side-item-option>
+
+      <app-side-item-option
+        [label]="g('personal-projects')"
+        (selectItem)="listenSelectedItem($event)"
+        link="/personal-projects"
+      >
+      </app-side-item-option>
+
+    </mat-drawer>
+    <mat-drawer-content class="side-bar-content">
+      <ng-content>
+
+      </ng-content>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</ng-container>

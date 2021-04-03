@@ -1,0 +1,11 @@
+<ng-container *transloco="let g; read('lang')">
+
+  <div class="p-grid p-mt-2">
+    <div class="p-col" (click)="changeLanguage('es')" [ngClass]="{'lang-selected': 'es' === selectedCode}">
+      <img [src]="'assets/icons/es.svg'" alt="LANG" class="responsive-flag"/>
+    </div>
+    <div class="p-col" (click)="changeLanguage('en')" [ngClass]="{'lang-selected': 'en' === selectedCode}">
+      <img [src]="'assets/icons/en.svg'" alt="LANG" class="responsive-flag"/>
+    </div>
+  </div>
+</ng-container>

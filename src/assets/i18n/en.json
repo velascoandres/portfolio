@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "about-me": "About me",
+    "education": "Education",
+    "experience": "Experience",
+    "skills": "Skills",
+    "personal-projects": "Personal Projects",
+    "contact": "Contact"
+  },
+  "lang": {
+    "es": "Spanish",
+    "en": "English"
+  }
+}
