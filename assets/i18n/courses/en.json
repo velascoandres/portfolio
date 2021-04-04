@@ -1,0 +1,9 @@
+{
+  "components": {
+    "courseItem": {
+      "expeditionDate": "Expedition Date",
+      "credentialID": "Credential ID",
+      "watchCertificate": "Watch Certificate"
+    }
+  }
+}
