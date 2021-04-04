@@ -1,1 +1,12 @@
-<app-course-list></app-course-list>
+<ng-container *transloco="let g; read('sections')">
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+      <h2>{{g('courses')}}  </h2>
+    </div>
+  </div>
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+      <app-course-list></app-course-list>
+    </div>
+  </div>
+</ng-container>

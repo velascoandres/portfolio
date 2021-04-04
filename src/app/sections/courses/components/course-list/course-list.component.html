@@ -1,5 +1,13 @@
-<app-course-item></app-course-item>
-<app-course-item></app-course-item>
-<app-course-item></app-course-item>
-<app-course-item></app-course-item>
-<app-course-item></app-course-item>
+<div class="p-grid">
+  <div
+    class="p-col-12 p-md-8"
+    *ngFor="let course of courses; let i = index">
+    <app-course-item
+      [course]="course"
+    ></app-course-item>
+    <div class="p-col-12" *ngIf="i < courses.length - 1">
+      <div class="item-divider"></div>
+    </div>
+  </div>
+
+</div>

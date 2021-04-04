@@ -1,22 +1,23 @@
 .course-item {
-  border-radius: 20px;
-  border: solid 1px black;
   margin-bottom: 1rem;
   overflow: hidden;
 }
 
 .course-logo{
-  border-right: solid 1px black;
-  object-fit: cover;
-  background: black;
+  object-fit: contain;
+  background: #ffffff;
 }
 
 .responsive-image-logo {
-  border-radius: 20px;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
+h4{
+  border: none;
+}
 
 @media only screen and (max-width: 770px) {
   .responsive-image-logo {
