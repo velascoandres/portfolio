@@ -16,7 +16,14 @@
             </ng-template>
             <ng-template pTemplate="content" let-event>
               <p-card [header]="l(event.status)" [subheader]="event.dates" [styleClass]="'custom-font'">
+<!--
                 <img *ngIf="event.image" [src]="'assets/images/logos/' + event.image" [alt]="l(event.status)" width="200" class="p-shadow-2" />
+-->
+                <app-image-loader
+                  [src]="'assets/images/logos/' + event.image"
+                  styleClass="p-shadow-2"
+                >
+                </app-image-loader>
                 <p>
                   {{l(event.description)}}
                 </p>
