@@ -1,1 +1,33 @@
-<p>education-route works!</p>
+<ng-container *transloco="let g; read('sections')">
+  <ng-container *transloco="let l; read('education.schools')">
+      <div class="p-grid">
+        <div class="p-col">
+          <h2># {{g('education')}}  </h2>
+        </div>
+      </div>
+    <div class="p-grid">
+      <div class="p-col">
+        <div class="card">
+          <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
+            <ng-template pTemplate="marker" let-event>
+            <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
+                <i [ngClass]="event.icon"></i>
+            </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+              <p-card [header]="l(event.status)" [subheader]="event.dates" [styleClass]="'custom-font'">
+                <img *ngIf="event.image" [src]="'assets/images/logos/' + event.image" [alt]="l(event.status)" width="200" class="p-shadow-2" />
+                <p>
+                  {{l(event.description)}}
+                </p>
+              </p-card>
+            </ng-template>
+          </p-timeline>
+        </div>
+      </div>
+    </div>
+
+  </ng-container>
+</ng-container>
+
+

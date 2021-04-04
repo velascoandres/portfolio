@@ -1,7 +1,7 @@
 @import "~primeflex/primeflex.scss";
 @import "~primeng/resources/primeng.min.css";
 @import "~primeicons/primeicons.css";
-@import "~primeng/resources/themes/mdc-light-indigo/theme.css";
+@import "~primeng/resources/themes/nova/theme.css";
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -21,5 +21,23 @@ body { margin: 0; font-family: "slkscr", "Helvetica Neue", sans-serif; }
   padding: 1rem;
   border: solid 2px darkred;
   border-radius: 5px;
-  font-family: "slkscr", serif;
+  transition: 1s;
+}
+
+.title{
+  transition: 1s;
+}
+/*
+.quote:hover{
+  transform: scale(1.1,1.1);
+  transition: 1s;
+}*/
+
+.custom-font{
+  font-family: "slkscr", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4 {
+  border-bottom: solid 2px black;
 }
