@@ -14,7 +14,6 @@ export class SectionLoaderComponent implements OnInit {
     private readonly router: Router,
   ) {
     this.router.events.subscribe((event: Event) => {
-        console.log(event, event instanceof NavigationEnd);
         switch (true) {
           case event instanceof NavigationStart: {
             this.isLoading = true;

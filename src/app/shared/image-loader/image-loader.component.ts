@@ -12,6 +12,9 @@ export class ImageLoaderComponent implements OnInit {
   styleClass: string;
 
   @Input()
+  styles: string;
+
+  @Input()
   src: string;
 
   hasLoaded: boolean;
