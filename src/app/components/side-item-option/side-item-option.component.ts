@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {SideBarComponent} from '../side-bar/side-bar.component';
 
 @Component({
@@ -15,10 +15,6 @@ export class SideItemOptionComponent implements OnInit {
 
   @Input()
   isSelected: boolean;
-
-  @Output()
-  selectItem: EventEmitter<string> = new EventEmitter<string>();
-
   constructor(
     public readonly sideBar: SideBarComponent
   ) {
@@ -27,8 +23,5 @@ export class SideItemOptionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  emitSelectedItem(link: string): void {
-    this.selectItem.emit(link);
-  }
 
 }

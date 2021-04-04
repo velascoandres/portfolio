@@ -1,0 +1,25 @@
+.course-item {
+  border-radius: 20px;
+  border: solid 1px black;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.course-logo{
+  border-right: solid 1px black;
+  object-fit: cover;
+  background: black;
+}
+
+.responsive-image-logo {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 770px) {
+  .responsive-image-logo {
+    height: 10rem;
+  }
+}

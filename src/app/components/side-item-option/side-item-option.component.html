@@ -2,7 +2,6 @@
   class="item title"
   [routerLink]="link" [id]="link"
   [ngClass]="{'item-selected': sideBar.selectedItem === link}"
-  (click)="emitSelectedItem(link)"
 >
   <span class="hash">#</span>
   <span>{{label}}</span>

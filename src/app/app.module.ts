@@ -18,6 +18,8 @@ import {MatSelectModule} from '@angular/material/select';
 import {DropdownModule} from 'primeng/dropdown';
 import {FormsModule} from '@angular/forms';
 import {ProgressBarModule} from 'primeng/progressbar';
+import { SideAvatarComponent } from './components/side-avatar/side-avatar.component';
+import {SharedModule} from './shared/shared.module';
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
     SideItemOptionComponent,
     LangPickerComponent,
     SectionLoaderComponent,
+    SideAvatarComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +45,7 @@ import {ProgressBarModule} from 'primeng/progressbar';
     DropdownModule,
     FormsModule,
     ProgressBarModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

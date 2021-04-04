@@ -41,3 +41,26 @@ body { margin: 0; font-family: "slkscr", "Helvetica Neue", sans-serif; }
 h1, h2, h3, h4 {
   border-bottom: solid 2px black;
 }
+
+.responsive-image{
+  width: 100%;
+  height: auto;
+}
+.responsive-flag {
+  height: 3rem;
+  width: 100%;
+}
+.rounded-img {
+  border-radius: 50%;
+}
+
+.fit-contain{
+  object-fit: contain;
+  width: 100%;
+}
+@media only screen and (max-width: 770px) {
+  .responsive-image {
+    height: 12rem;
+    width: 12rem;
+  }
+}
