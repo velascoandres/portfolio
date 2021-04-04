@@ -1,0 +1,5 @@
+<img *ngIf="!hasLoaded" src="assets/images/loaders/img-loader.svg" alt="" [class]="styleClass">
+<!--
+<p-skeleton [hidden]="!hasLoaded"></p-skeleton>
+-->
+<img [hidden]="!hasLoaded" [src]="src" (load)="hasLoaded = true" [class]="styleClass" alt=""/>
