@@ -1,0 +1,12 @@
+{
+  "schools": {
+    "montufar": {
+      "name": "Juan Pío Montufar High School",
+      "description": "Science Bachelor"
+    },
+    "poli": {
+      "name": "National Polytechnic School (Ecuador)",
+      "description": "Information Systems and Computing Engineer"
+    }
+  }
+}
