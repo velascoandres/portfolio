@@ -20,6 +20,7 @@ import {FormsModule} from '@angular/forms';
 import {ProgressBarModule} from 'primeng/progressbar';
 import { SideAvatarComponent } from './components/side-avatar/side-avatar.component';
 import {SharedModule} from './shared/shared.module';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {SharedModule} from './shared/shared.module';
     LangPickerComponent,
     SectionLoaderComponent,
     SideAvatarComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

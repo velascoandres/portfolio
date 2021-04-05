@@ -1,11 +1,13 @@
 <ng-container *transloco="let g; read('sections')">
-  <div class="side-bar">
-    <app-side-avatar></app-side-avatar>
-    <app-lang-picker></app-lang-picker>
-    <app-side-item-option
-      *ngFor="let route of routes"
-      [label]="g(route.label)"
-      [link]="route.link"
-    ></app-side-item-option>
+  <div id="side-bar" class="side-bar open">
+    <div class="content-side">
+      <app-side-avatar></app-side-avatar>
+      <app-lang-picker></app-lang-picker>
+      <app-side-item-option
+        *ngFor="let route of routes"
+        [label]="g(route.label)"
+        [link]="route.link"
+      ></app-side-item-option>
+    </div>
   </div>
 </ng-container>

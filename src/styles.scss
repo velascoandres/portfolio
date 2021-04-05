@@ -13,8 +13,14 @@
   src: url(assets/fonts/slkscr.ttf) format("opentype");
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: "slkscr", "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "slkscr", "Helvetica Neue", sans-serif;
+}
 
 
 .quote {
@@ -24,63 +30,89 @@ body { margin: 0; font-family: "slkscr", "Helvetica Neue", sans-serif; }
   transition: 1s;
 }
 
-.title{
+.title {
   transition: 1s;
 }
+
 /*
 .quote:hover{
   transform: scale(1.1,1.1);
   transition: 1s;
 }*/
 
-.custom-font{
+.custom-font {
   font-family: "slkscr", "Helvetica Neue", sans-serif;
   font-size: 15px;
 }
 
 h1, h2, h3, h4 {
   border-bottom: solid 2px black;
-  &:before{
+
+  &:before {
     content: '# ';
   }
 
 }
 
-.responsive-image{
+.responsive-image {
   width: 100%;
   height: auto;
 }
+
 .responsive-flag {
   height: 3rem;
   width: 100%;
 }
+
 .rounded-img {
   border-radius: 50%;
 }
 
-.fit-contain{
+.fit-contain {
   object-fit: contain;
   width: 100%;
 }
 
-.button{
+.button {
   font-family: "slkscr", "Helvetica Neue", sans-serif;
   padding: 1rem;
   cursor: pointer;
   transition: 0.3s;
   border: none;
+  border-radius: 5px;
 }
 
-.button:hover{
+.button:hover {
   background: black;
   color: white;
   transition: 0.3s;
 }
-.button:active{
+
+.button:active {
   background: #484848;
   color: white;
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
   transition: 0.3s;
+  border: none;
+}
+
+.button:focus {
+  border: none;
+}
+
+.button-dark {
+  color: white;
+  background: black;
+
+  &:hover {
+    background: white;
+    color: black;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: black;
+  }
 }
 
 @media only screen and (max-width: 770px) {

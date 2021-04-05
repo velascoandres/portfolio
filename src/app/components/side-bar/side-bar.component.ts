@@ -18,6 +18,8 @@ export class SideBarComponent implements OnInit {
 
   routes: IRoute[];
 
+  isToggle: boolean;
+
   constructor(
     private readonly router: Router,
   ) {
@@ -61,5 +63,16 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  public toggle(): void {
+    const sidebar = document.getElementById('side-bar');
+    if (this.isToggle) {
+      sidebar.classList.remove('close');
+      sidebar.classList.add('open');
+      this.isToggle = false;
+    } else {
+      sidebar.classList.remove('open');
+      sidebar.classList.add('close');
+      this.isToggle = true;
+    }
+  }
 }
