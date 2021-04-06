@@ -33,11 +33,18 @@
 
 @media only screen and (max-width: 770px) {
   .side-bar {
-    height: auto;
     border-bottom: solid 1px black;
     border-right: none;
-    position: relative;
     width: 100%;
+  }
+
+  .open{
+    height: 750px;
+    transition: all .5s cubic-bezier(.7, 0, .3, 1);
+  }
+  .close{
+    height: 0;
+    transition: all .5s cubic-bezier(.7, 0, .3, 1);
   }
 }
 

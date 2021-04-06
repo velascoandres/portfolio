@@ -1,6 +1,12 @@
 #content{
-  padding-top: 5rem;
   padding-left: 4rem;
-  margin-left: 270px;
   transition: margin-left .5s;
+}
+
+@media only screen and (max-width: 770px) {
+  #content{
+    padding-left: 0;
+    margin-left: 2rem;
+    transition: margin-left .5s;
+  }
 }
