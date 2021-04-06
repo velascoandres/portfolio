@@ -1,21 +1,21 @@
 .side-bar {
-  background: white;
+  background: #eaeaea;
   height: 100vh;
-  border-right: solid 1px black;
   word-break: break-word;
   position: fixed;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   width: 250px;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 10%);
 }
 
 .open {
-  transform: translateX(0%);
-  transition: all .2s cubic-bezier(.7, 0, .3, 1);
+  width: 250px;
+  transition: all .5s cubic-bezier(.7, 0, .3, 1);
 }
 
 .close {
-  transform: translateX(-100%);
-  transition: all .2s cubic-bezier(.7, 0, .3, 1);
+  width: 0;
+  transition: all .5s cubic-bezier(.7, 0, .3, 1);
 }
 
 .side-bar-content {
@@ -23,17 +23,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.toggle-bar {
-  width: 100%;
-  background: black;
-  margin-bottom: 1rem;
-}
-
-.side-bar-compress {
-  transform: translateX(-100%);
-  transition: all .2s cubic-bezier(.7, 0, .3, 1);
 }
 
 .content-side{

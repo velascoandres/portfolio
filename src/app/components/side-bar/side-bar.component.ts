@@ -65,13 +65,16 @@ export class SideBarComponent implements OnInit {
   }
   public toggle(): void {
     const sidebar = document.getElementById('side-bar');
+    const content = document.getElementById('content');
     if (this.isToggle) {
       sidebar.classList.remove('close');
       sidebar.classList.add('open');
+      content.style.marginLeft = '270px';
       this.isToggle = false;
     } else {
       sidebar.classList.remove('open');
       sidebar.classList.add('close');
+      content.style.marginLeft = '0';
       this.isToggle = true;
     }
   }
