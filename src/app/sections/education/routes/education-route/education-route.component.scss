@@ -1,3 +1,10 @@
 .education-img{
   width: 150px;
 }
+
+h4{
+  border: none;
+  &:before{
+    content: '';
+  }
+}

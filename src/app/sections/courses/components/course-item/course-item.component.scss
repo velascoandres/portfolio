@@ -1,11 +1,16 @@
 .course-item {
   margin-bottom: 1rem;
   overflow: hidden;
+  transition: 0.3s;
 }
+
+.item-divider {
+  border-bottom: solid 1px white;
+}
+
 
 .course-logo{
   object-fit: contain;
-  background: #ffffff;
 }
 
 .responsive-image-logo {

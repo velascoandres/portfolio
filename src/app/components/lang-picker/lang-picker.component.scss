@@ -11,13 +11,12 @@
   transition: 0.5s;
 }
 
-
-.lang-option:hover{
-  background: black;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
 .lang-option{
   transition: 0.5s;
+  &:hover{
+    background: black;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
 }

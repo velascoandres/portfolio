@@ -1,11 +1,11 @@
 .side-bar {
-  background: #eaeaea;
   height: 100vh;
   word-break: break-word;
   position: fixed;
   margin-top: 4.5rem;
   width: 250px;
   box-shadow: 0 10px 40px rgb(0 0 0 / 10%);
+  background: var(--bg-color);
 }
 
 .open {

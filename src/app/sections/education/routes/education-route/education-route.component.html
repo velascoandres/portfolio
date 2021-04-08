@@ -15,19 +15,24 @@
             </span>
             </ng-template>
             <ng-template pTemplate="content" let-event>
-              <p-card [header]="l(event.status)" [subheader]="event.dates" [styleClass]="'custom-font'">
-<!--
-                <img *ngIf="event.image" [src]="'assets/images/logos/' + event.image" [alt]="l(event.status)" width="200" class="p-shadow-2" />
--->
-                <app-image-loader
-                  [src]="'assets/images/logos/' + event.image"
-                  styles="width: 175px"
-                >
-                </app-image-loader>
-                <p>
-                  {{l(event.description)}}
-                </p>
+              <!--<p-card [header]="l(event.status)" [subheader]="event.dates" [styleClass]="'custom-font'">
+
               </p-card>
+              -->
+              <h4>
+                {{l(event.status)}}
+              </h4>
+              <p>
+                {{event.dates}}
+              </p>
+              <app-image-loader
+                [src]="'assets/images/logos/' + event.image"
+                styles="width: 175px"
+              >
+              </app-image-loader>
+              <p>
+                {{l(event.description)}}
+              </p>
             </ng-template>
           </p-timeline>
         </div>

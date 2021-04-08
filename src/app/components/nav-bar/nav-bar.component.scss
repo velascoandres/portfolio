@@ -5,6 +5,7 @@
   position: fixed;
   margin-bottom: 5rem;
   background: black;
+  z-index: 1000;
 }
 
 
@@ -14,6 +15,6 @@
     overflow: hidden;
     height: 5rem;
     margin-bottom: 5rem;
-    background: black;
+    background: #020917;
   }
 }
