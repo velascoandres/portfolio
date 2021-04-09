@@ -1,13 +1,12 @@
-<app-section-loader></app-section-loader>
-<app-nav-bar></app-nav-bar>
-<div  id="lateral-nav" class="open">
-  <app-side-bar #sideBar>
-  </app-side-bar>
-</div>
-<div id="content" class="collapse-open">
-  <router-outlet></router-outlet>
-</div>
+<ng-particles
+  [id]="id"
+  [options]="particlesOptions"
+  (particlesLoaded)="particlesLoaded($event)"
+  (particlesInit)="particlesInit($event)"
 
+>
+</ng-particles>
+<app-main></app-main>
 <!--
 <div class="p-grid">
   <div id="lateral-nav" class="p-col-12 p-md-2 open">

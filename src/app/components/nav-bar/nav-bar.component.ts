@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AppComponent} from '../../app.component';
+import {MainComponent} from '../main/main.component';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,7 +9,7 @@ import {AppComponent} from '../../app.component';
 export class NavBarComponent implements OnInit {
 
   constructor(
-    public readonly app: AppComponent,
+    public readonly app: MainComponent,
   ) { }
 
   ngOnInit(): void {
