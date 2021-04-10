@@ -1,0 +1,9 @@
+<div class="p-grid">
+  <div
+    *ngFor="let job of jobs; let i = index"
+    class="p-col-12 animate__animated"
+    [ngClass]="{'animate__fadeIn': i % 2 !== 0, 'animate__fadeInDown': i % 2 === 0}"
+  >
+    <app-job-item [job]="job"></app-job-item>
+  </div>
+</div>

@@ -1,1 +1,12 @@
-<p>experience-route works!</p>
+<ng-container *transloco="let g; read('sections')">
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+      <h2>{{g('experience')}}  </h2>
+    </div>
+  </div>
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+        <app-jobs-list [jobs]="jobs"></app-jobs-list>
+    </div>
+  </div>
+</ng-container>

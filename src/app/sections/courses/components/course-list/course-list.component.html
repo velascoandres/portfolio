@@ -2,7 +2,7 @@
   <div
     class="p-col-12 p-md-8 animate__animated"
     *ngFor="let course of courses; let i = index"
-    [ngClass]="{'animate__backInRight': i % 2 === 0, 'animate__backInLeft': i % 2 !== 0}"
+    [ngClass]="{'animate__fadeIn': i % 2 === 0, 'animate__fadeInDown': i % 2 !== 0}"
   >
     <app-course-item
       [course]="course"

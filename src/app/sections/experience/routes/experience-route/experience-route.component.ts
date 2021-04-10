@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {IJob} from '../../interfaces';
+import {JOBS} from '../../constants/jobs';
 
 @Component({
   selector: 'app-experience-route',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceRouteComponent implements OnInit {
 
-  constructor() { }
+  jobs: IJob[] = JOBS;
+
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

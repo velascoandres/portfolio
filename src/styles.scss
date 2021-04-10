@@ -30,6 +30,8 @@ body {
   font-family: "Montserrat", "slkscr", "Helvetica Neue", sans-serif;
   background: var(--bg-color);
   color: white;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 
@@ -180,3 +182,41 @@ h1, h2, h3, h4 {
   }
 
 }
+
+// animations
+.wrap {
+  float: left;
+  position: relative;
+  margin: 0 auto;
+  width: 30rem;
+  height: 30rem;
+  transform-style: preserve-3d;
+}
+
+.wrap div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.front {
+  z-index: 100;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+}
+
+.wrap {
+  transition: transform 0.3s ease-in;
+}
+
+.wrap.rotateY:hover{
+  transform: rotateY(180deg);
+}
+

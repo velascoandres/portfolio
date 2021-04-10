@@ -1,0 +1,30 @@
+.job-item {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.item-divider {
+  border-bottom: solid 1px white;
+}
+
+
+.job-logo{
+  object-fit: contain;
+}
+
+.responsive-image-logo {
+  width: 10rem;
+  height: auto;
+}
+
+h4{
+  border: none;
+}
+
+@media only screen and (max-width: 770px) {
+  .responsive-image-logo {
+    height: 10rem;
+  }
+}
+

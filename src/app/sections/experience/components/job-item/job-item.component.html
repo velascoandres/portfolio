@@ -1,0 +1,20 @@
+<ng-container *transloco="let l; read('experience.jobs')">
+  <div
+    class="p-grid course-item"
+  >
+    <div class="p-col-12 job-logo">
+      <img [src]="'assets/images/logos/companies/' + job.companyCode + '.png'" alt="" class="responsive-image-logo">
+    </div>
+    <div class="p-col-12 p-md-10 item-divider">
+      <h4>{{l(job.description)}}</h4>
+      <p>
+        {{l(job.date)}}
+      </p>
+      <p>
+        {{l(job.detail)}}
+      </p>
+    </div>
+  </div>
+</ng-container>
+
+
