@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ISkill} from '../../interfaces';
 
 @Component({
   selector: 'app-skill-item',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillItemComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  skill: ISkill;
+
+  levelList: number[] = [];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.levelList = Array(this.skill.level).fill(1);
   }
 
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ISkill} from '../../interfaces';
+import {SKILLS} from '../../mocks/skills';
 
 @Component({
   selector: 'app-skills-route',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsRouteComponent implements OnInit {
 
-  constructor() { }
+  skills: ISkill[];
+
+  constructor() {
+    this.skills = SKILLS;
+  }
 
   ngOnInit(): void {
   }

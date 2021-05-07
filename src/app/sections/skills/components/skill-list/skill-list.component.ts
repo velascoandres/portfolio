@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {ISkill} from '../../interfaces';
 
 @Component({
   selector: 'app-skill-list',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillListComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  skills: ISkill[];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

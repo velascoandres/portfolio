@@ -6,6 +6,7 @@ import {SkillsRouteComponent} from './routes/skills-route/skills-route.component
 import {TRANSLOCO_SCOPE, TranslocoModule} from '@ngneat/transloco';
 import {SkillItemComponent} from './components/skill-item/skill-item.component';
 import {SkillListComponent} from './components/skill-list/skill-list.component';
+import {SharedModule} from '../../shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {SkillListComponent} from './components/skill-list/skill-list.component';
   imports: [
     CommonModule,
     SkillsRoutingModule,
-    TranslocoModule
+    TranslocoModule,
+    SharedModule
   ],
   providers: [
     {

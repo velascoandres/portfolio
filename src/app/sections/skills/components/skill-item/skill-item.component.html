@@ -1,1 +1,14 @@
-<p>skill-item works!</p>
+<div class="content__wrapper">
+  <div class="content__logo center">
+    <app-image-loader
+      [src]="skill.logo"
+      styleClass="responsive-image-fit">
+    </app-image-loader>
+  </div>
+  <div class="name center">
+    <strong>{{skill.name}}</strong>
+  </div>
+  <div class="rating center">
+    <span class="fas fa-star gold" *ngFor="let level of levelList"></span>
+  </div>
+</div>

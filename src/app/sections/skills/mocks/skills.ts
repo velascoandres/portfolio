@@ -59,13 +59,13 @@ export const SKILLS: ISkill[] = [
     name: 'NgRx',
     level: 3,
     type: 'library',
-    logo: 'assets/images/logos/skills/ngrxjs.svg',
+    logo: 'assets/images/logos/skills/ngrx.svg',
   },
   {
-    name: 'Testing Library',
+    name: 'Jest',
     level: 3,
     type: 'library',
-    logo: 'assets/images/logos/skills/testing-lib.svg',
+    logo: 'assets/images/logos/skills/jest.svg',
   },
   {
     name: 'Flutter',
@@ -83,7 +83,7 @@ export const SKILLS: ISkill[] = [
     name: 'MongoDB',
     level: 3,
     type: 'database',
-    logo: 'assets/images/logos/skills/mongo.svg',
+    logo: 'assets/images/logos/skills/mongodb.svg',
   },
   {
     name: 'MySQL',

@@ -1,1 +1,10 @@
-<p>skill-list works!</p>
+<div class="p-grid">
+  <div
+    class="p-col animate__animated animate__rotateInDownLeft"
+    *ngFor="let skill of skills; let i = index"
+    [ngClass]="{'animate__rotateInDownLeft': i % 2 !== 0, 'animate__rotateInDownRight': i % 2 === 0}"
+
+  >
+    <app-skill-item [skill]="skill"></app-skill-item>
+  </div>
+</div>

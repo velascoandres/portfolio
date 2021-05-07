@@ -4,16 +4,19 @@ import {SkeletonModule} from 'primeng/skeleton';
 
 
 import { ImageLoaderComponent } from './image-loader/image-loader.component';
+import { FilterListPipe } from './pipes/filter-list.pipe';
 
 
 
 @NgModule({
   declarations: [
-    ImageLoaderComponent
+    ImageLoaderComponent,
+    FilterListPipe
   ],
-  exports: [
-    ImageLoaderComponent
-  ],
+    exports: [
+        ImageLoaderComponent,
+        FilterListPipe
+    ],
   imports: [
     CommonModule,
     SkeletonModule,

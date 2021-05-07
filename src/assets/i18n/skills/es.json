@@ -4,5 +4,6 @@
   "frameworks": "Frameworks",
   "libraries": "Librerías",
   "database": "Tecnologías de Bases de Datos",
-  "sdks": "SDK's y Entornos de ejecución"
+  "sdks": "SDK's y Entornos de ejecución",
+  "cloud": "Tecnologías Serverless o en la Nube"
 }
