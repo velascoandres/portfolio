@@ -1,0 +1,23 @@
+{
+  "title": "Experiencia Profesional",
+  "jobs": {
+    "internal": {
+      "company": "Registro de la Propiedad DMQ",
+      "description": "Pasante para el área de desarrollo web.",
+      "date": "Febrero del 2019 - Junio del 2019",
+      "detail": "Realicé tareas de mantenimiento del sistema de gestión interno. Trabajé en la implementación del sistema interno de consultas y además realicé actividades de soporte técnico."
+    },
+    "junior": {
+      "company": "Manticore Labs",
+      "description": "Desarrollador Fullstack",
+      "date": "Agosto del 2019 - Presente",
+      "detail": "Trabajé proporcionado servicios de consultoría a clientes potenciales de la empresa. He colaborado como uno de los principales desarrolladores en las librerías internas de la organización. Participe en el análisis, diseño y desarrollo de aplicaciones para los clientes de la compañía de los cuales puedo nombrar: “Alitas del Cadillac”, “Sande Flowers” y “Uncle Sam”.  También proporcione servicios de “outsourcing” para los laboratorios Bagó en su sistema de reembolsos y gastos."
+    },
+    "freelance": {
+      "company": "Willay SA.",
+      "date": "Febrero del 2021 - Presente",
+      "description": "Consultor externo (Freelancer)",
+      "detail": "Servicios varios de consultoría"
+    }
+  }
+}
