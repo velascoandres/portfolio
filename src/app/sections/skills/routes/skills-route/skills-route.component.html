@@ -1,1 +1,11 @@
-<p>skills-route works!</p>
+<ng-container *transloco="let g; read('skills')">
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+      <h2>{{g('title')}}  </h2>
+    </div>
+  </div>
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+    </div>
+  </div>
+</ng-container>
