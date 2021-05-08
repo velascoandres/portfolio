@@ -1,9 +1,12 @@
 {
   "title": "Skills",
-  "languages": "Languages",
+  "languages": "Programming Languages",
   "frameworks": "Frameworks",
   "libraries": "Libraries",
   "database": "Data Bases Technologies",
   "sdks": "SDK's and Execution Environments",
-  "cloud": "Cloud Technologies or Serverless"
+  "cloud": "Cloud Technologies or Serverless",
+  "misc": {
+    "core": "Core Skill"
+  }
 }

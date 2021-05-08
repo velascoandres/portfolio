@@ -1,32 +1,69 @@
-.content__wrapper{
+.content__wrapper {
   width: 16rem;
   max-height: 350px;
   background-color: #020917;
   border-radius: 5px;
   transition: 0.5s;
-  &:hover{
+  position: relative;
+
+  &:hover {
     transform: scale(1.1, 1.1);
     transition: 0.5s;
     background-color: white;
     color: black;
+    z-index: 1;
 
-    .name{
+    .name {
       border-bottom: 2px solid black;
       transition: 0.5s;
     }
+
     .gold {
       color: #020917;
       transition: 0.5s;
     }
 
+    .tagged span {
+      background-color: #020917;
+      color: white;
+      transition: 0.5s;
+    }
+
   }
 }
+
 .name {
   border-bottom: 1px solid white;
 }
 
-.content__logo{
+
+.content__logo {
   height: 200px;
+}
+
+.tagged {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.tagged span {
+  position: absolute;
+  right: -54px;
+  top: 40px;
+  transform: rotate(45deg);
+  line-height: 25px;
+  background-color: white;
+  color: black;
+  z-index: 2;
+  width: 200px;
+  text-align: center;
+  transition: 0.5s;
+  font-weight: 700;
 }
 
 .center {

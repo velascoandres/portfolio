@@ -5,6 +5,9 @@
       styleClass="responsive-image-fit">
     </app-image-loader>
   </div>
+  <div class="tagged" *ngIf="skill.level >= 4">
+    <span>{{'skills.misc.core' | transloco}}</span>
+  </div>
   <div class="name center">
     <strong>{{skill.name}}</strong>
   </div>
