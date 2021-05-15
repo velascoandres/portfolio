@@ -7,10 +7,16 @@
       "date": "February 2019 - June 2019",
       "detail": "I performed maintenance tasks for the internal management web system. I have participated on the development of internal query system and I also worked on technical support tasks."
     },
-    "junior": {
+    "intern": {
       "company": "Manticore Labs",
-      "description": "Fullstack Developer",
-      "date": "August 2019 - Present",
+      "description": "Software Development Intern",
+      "date": "August 2019 - April 2020",
+      "detail": "I worked providing consulting services to potential clients of the company."
+    },
+    "development": {
+      "company": "Manticore Labs",
+      "description": "Software Development Engineer",
+      "date": "April 2020 - Present",
       "detail": "I worked providing consulting services to potential clients of the company. I have collaborated as one of the main developers in the internal libraries of the organization. Participate in the analysis, design and development of applications for the company's clients of which I can name: “Alitas del Cadillac“, “Sande Flowers“ and “Uncle Sam“. Also provide outsourcing services for Bagó laboratories in their reimbursement and expense system."
     },
     "freelance": {

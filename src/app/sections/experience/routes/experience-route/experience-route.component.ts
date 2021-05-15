@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {IJob} from '../../interfaces';
+import { IPosition} from '../../interfaces';
 import {JOBS} from '../../constants/jobs';
 
 @Component({
@@ -9,7 +9,7 @@ import {JOBS} from '../../constants/jobs';
 })
 export class ExperienceRouteComponent implements OnInit {
 
-  jobs: IJob[] = JOBS;
+  jobs: IPosition[] = JOBS;
 
 
   constructor() {

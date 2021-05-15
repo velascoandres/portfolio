@@ -9,6 +9,25 @@
 }
 
 
+.positions-container {
+  margin-left: 10px;
+  border-left: 2px solid white;
+  position: relative;
+}
+
+.position-dot{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  left: -8.5px;
+}
+
+.position-description{
+  padding-left: 1rem;
+}
+
 .job-logo{
   object-fit: contain;
 }

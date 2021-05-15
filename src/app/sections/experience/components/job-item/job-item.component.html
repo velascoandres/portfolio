@@ -3,16 +3,23 @@
     class="p-grid course-item"
   >
     <div class="p-col-12 job-logo">
-      <img [src]="'assets/images/logos/companies/' + job.companyCode + '.png'" alt="" class="responsive-image-logo">
+      <img [src]="'assets/images/logos/companies/' + company + '.png'" alt="" class="responsive-image-logo">
     </div>
-    <div class="p-col-12 p-md-10 item-divider">
-      <h4>{{l(job.description)}}</h4>
-      <p>
-        {{l(job.date)}}
-      </p>
-      <p>
-        {{l(job.detail)}}
-      </p>
+    <div class="p-col-12 p-md-10 positions-container">
+      <div  *ngFor="let position of positions">
+        <div class="position-dot"></div>
+        <div class="position-description">
+          <h4>{{l(position.description)}}</h4>
+          <p>
+            {{l(position.date)}}
+          </p>
+          <p>
+            {{l(position.detail)}}
+          </p>
+        </div>
+
+      </div>
+
     </div>
   </div>
 

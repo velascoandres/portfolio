@@ -1,9 +1,13 @@
-<div class="p-grid">
+<div class="p-grid" *ngIf="positionsMap">
   <div
-    *ngFor="let job of jobs; let i = index"
+    *ngFor="let company of companies; let i = index"
     class="p-col-12 animate__animated"
     [ngClass]="{'animate__fadeIn': i % 2 !== 0, 'animate__fadeInDown': i % 2 === 0}"
   >
-    <app-job-item [job]="job"></app-job-item>
+    <app-job-item
+      [company]="company"
+      [positions]="positionsMap[company]"
+    >
+    </app-job-item>
   </div>
 </div>
