@@ -1,11 +1,9 @@
 <ng-container *transloco="let l; read('courses.components.courseItem')">
-  <div
-    class="p-grid course-item"
-  >
-    <div class="p-col-12 p-md-2 course-logo">
-      <img [src]="'assets/images/logos/courses/' + course.platform + '.png'" alt="" class="responsive-image-logo">
-    </div>
-    <div class="p-col-12 p-md-10 item-divider">
+
+  <div class="p-grid course-container">
+    <img [src]="'assets/images/logos/courses/' + course.platform + '.svg'" alt="" class="responsive-image-logo background-logo">
+
+    <div class="p-col-12  item-divider">
       <h4>{{course.title}}</h4>
       <p>
         {{l('expeditionDate')}}: {{course.expeditionDate}}
@@ -13,11 +11,10 @@
       <p>
         {{l('credentialID')}}: {{course.credentialId}}
       </p>
-      <div class="p-col-12">
-        <button class="button" (click)="openCredentialWindow()"> {{l('watchCertificate')}}</button>
-      </div>
     </div>
-
+    <div class="p-col-12">
+      <button class="button" (click)="openCredentialWindow()"> {{l('watchCertificate')}}</button>
+    </div>
   </div>
 </ng-container>
 
