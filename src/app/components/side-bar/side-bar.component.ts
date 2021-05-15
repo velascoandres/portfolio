@@ -33,10 +33,6 @@ export class SideBarComponent implements OnInit {
         link: '/education',
       },
       {
-        label: 'courses',
-        link: '/courses',
-      },
-      {
         label: 'experience',
         link: '/experience',
       },

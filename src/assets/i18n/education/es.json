@@ -8,5 +8,15 @@
       "name": "Escuela Politécnica Nacional (Ecuador)",
       "description": "Ingeniero en Sistémas Informáticos y de Computación"
     }
+  },
+  "courses": {
+    "components": {
+      "courseItem": {
+        "expeditionDate": "Fecha de Expedición",
+        "credentialID": "ID del Certificado",
+        "watchCertificate": "Ver certificado"
+      }
+    }
   }
+
 }

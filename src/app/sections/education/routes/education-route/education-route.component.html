@@ -1,11 +1,10 @@
 <ng-container *transloco="let g; read('sections')">
   <ng-container *transloco="let l; read('education.schools')">
-      <div class="p-grid">
-        <div class="p-col">
-          <h2>{{g('education')}}  </h2>
-        </div>
-      </div>
+
     <div class="p-grid">
+      <div class="p-col-12 p-md-10">
+        <h2>{{g('education')}}  </h2>
+      </div>
       <div class="p-col">
         <div class="card">
           <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
@@ -15,24 +14,25 @@
             </span>
             </ng-template>
             <ng-template pTemplate="content" let-event>
-              <!--<p-card [header]="l(event.status)" [subheader]="event.dates" [styleClass]="'custom-font'">
+              <div class="animate__animated animate__bounceIn">
+                <h4>
+                  {{l(event.status)}}
+                </h4>
+                <p>
+                  {{event.dates}}
+                </p>
+                <app-image-loader
+                  [src]="'assets/images/logos/' + event.image"
+                  styles="width: 175px"
 
-              </p-card>
-              -->
-              <h4>
-                {{l(event.status)}}
-              </h4>
-              <p>
-                {{event.dates}}
-              </p>
-              <app-image-loader
-                [src]="'assets/images/logos/' + event.image"
-                styles="width: 175px"
-              >
-              </app-image-loader>
-              <p>
-                {{l(event.description)}}
-              </p>
+                >
+                </app-image-loader>
+                <p>
+                  {{l(event.description)}}
+                </p>
+
+              </div>
+
             </ng-template>
           </p-timeline>
         </div>
@@ -40,6 +40,17 @@
     </div>
 
   </ng-container>
+
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+      <h2>{{g('courses')}}  </h2>
+    </div>
+  </div>
+  <div class="p-grid">
+    <div class="p-col-12 p-md-10">
+      <app-course-list></app-course-list>
+    </div>
+  </div>
 </ng-container>
 
 

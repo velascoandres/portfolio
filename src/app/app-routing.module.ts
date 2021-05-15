@@ -13,10 +13,6 @@ const routes: Routes = [
     loadChildren: () => import('./sections/education/education.module').then(m => m.EducationModule),
   },
   {
-    path: 'courses',
-    loadChildren: () => import('./sections/courses/courses.module').then(m => m.CoursesModule),
-  },
-  {
     path: 'experience',
     loadChildren: () => import('./sections/experience/experience.module').then(m => m.ExperienceModule),
   },
