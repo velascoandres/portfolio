@@ -1,3 +1,16 @@
 {
-  "description": "\nGreetings, I am Andrés Velasco, undergraduate from the Systems Engineering career\nInformatics and Computing (close to graduation). I am a person\nproactive and with a lot of curiosity to learn and know much more in order\nto be a professional of excellence."
+
+  "introduction": {
+    "description": "\nGreetings, I am Andrés Velasco Information Systems and Computing Engineer \n. I am a person proactive and with a lot of curiosity to learn and know much more in order\nto be a professional of excellence."
+  },
+  "contact": {
+    "title": "How to reach me ?",
+    "options": {
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "github": "My Github Profile",
+      "linkedin": "My Linkedin Profile",
+      "twitter": "My Twitter Profile"
+    }
+  }
 }

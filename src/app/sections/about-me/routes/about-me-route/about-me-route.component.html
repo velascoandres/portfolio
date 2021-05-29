@@ -6,13 +6,49 @@
       </div>
     </div>
     <div class="p-grid">
-        <div class="p-col-12 p-md-8">
-          <div class="quote gradient-background">
-            <p>
-              {{l('description')}}
-            </p>
-          </div>
+      <div class="p-col-12 p-md-8">
+        <div class="quote gradient-background">
+          <p>
+            {{l('introduction.description')}}
+          </p>
         </div>
       </div>
+    </div>
+    <div class="p-grid">
+      <div class="p-col-12 p-md-8">
+        <h2>{{l('contact.title')}}  </h2>
+      </div>
+      <div class="p-col-12">
+        <ng-container *transloco="let h; read('about.contact.options')">
+          <div class="p-grid">
+            <div
+              class="p-col-2"
+              *ngFor="let contact of contacts"
+            >
+              <app-contact-icon
+                [tooltip]="h(contact.type)"
+                [url]="contact.iconUrl"
+                [redirectTo]="contact.redirectTo"
+              >
+              </app-contact-icon>
+
+            </div>
+          </div>
+        </ng-container>
+      </div>
+
+      <div class="p-col-12 p-md-8">
+
+        <p>
+          <i class="fa fa-envelope-o" aria-hidden="true"> velasco.andrs@gmail.com</i>
+        </p>
+
+        <p>
+          <i class="fa fa-phone"> (+593) 991619600</i>
+        </p>
+
+      </div>
+
+    </div>
   </ng-container>
 </ng-container>

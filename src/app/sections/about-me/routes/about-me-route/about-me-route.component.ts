@@ -1,4 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+
+
+interface IContact {
+  type: string;
+  redirectTo: string;
+  iconUrl: string;
+}
 
 @Component({
   selector: 'app-about-me-route',
@@ -7,7 +14,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeRouteComponent implements OnInit {
 
-  constructor() { }
+
+  contacts: IContact[] = [
+    {
+      type: 'github',
+      redirectTo: 'https://github.com/velascoandres',
+      iconUrl: '/assets/images/logos/companies/github.svg'
+    },
+    {
+      type: 'linkedin',
+      redirectTo: 'https://www.linkedin.com/in/andr%C3%A9s-velasco-210303135/',
+      iconUrl: '/assets/images/logos/companies/linkedin.svg'
+    },
+    {
+      type: 'twitter',
+      redirectTo: 'https://twitter.com/Andres33033134',
+      iconUrl: '/assets/images/logos/companies/twitter.svg'
+    },
+  ];
+
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

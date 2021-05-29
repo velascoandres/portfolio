@@ -1,3 +1,16 @@
 {
-  "description": "Saludos, soy Andrés Velasco, egresado de la carrera de Ingeniería en Sistemas\nInformática y Computación (próximo a graduarse). soy una persona\nproactiva y con mucha curiosidad por aprender y saber mucho más para\nser un profesional de excelencia."
+
+  "introduction": {
+    "description": "Saludos, soy Andrés Velasco Ingeniero en Sistemas Informáticos y de Computación. \nSoy una persona proactiva y con mucha curiosidad por aprender y saber mucho más para\nser un profesional de excelencia."
+  },
+  "contact": {
+    "title": "¿ Cómo contactarme ?",
+    "options": {
+      "email": "Correo Electrónico",
+      "phone": "Número de teléfono",
+      "github": "Mi perfil en Github",
+      "linkedin": "Mi perfil en Linkedin",
+      "twitter": "Mi perfil de Twitter"
+    }
+  }
 }

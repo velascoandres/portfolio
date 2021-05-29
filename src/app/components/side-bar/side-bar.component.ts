@@ -40,10 +40,10 @@ export class SideBarComponent implements OnInit {
         label: 'skills',
         link: '/skills',
       },
-      {
+/*      {
         label: 'personal-projects',
         link: '/personal-projects',
-      },
+      },*/
     ];
     this.handleRoute();
   }

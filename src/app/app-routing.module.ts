@@ -20,10 +20,10 @@ const routes: Routes = [
     path: 'skills',
     loadChildren: () => import('./sections/skills/skills.module').then(m => m.SkillsModule),
   },
-  {
+/*  {
     path: 'personal-projects',
     loadChildren: () => import('./sections/personal-projects/personal-projects-routing.module').then(m => m.PersonalProjectsRoutingModule),
-  },
+  },*/
   {
     path: '',
     redirectTo: 'about-me',
