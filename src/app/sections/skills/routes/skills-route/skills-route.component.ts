@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
+
 import {ISkill} from '../../interfaces';
 import {SKILLS} from '../../mocks/skills';
 
@@ -11,9 +13,11 @@ export class SkillsRouteComponent implements OnInit {
 
   skills: ISkill[];
 
-  constructor() {
+  constructor(private readonly titleService: Title) {
+    this.titleService.setTitle('Skills');
     this.skills = SKILLS;
   }
+
 
   ngOnInit(): void {
   }

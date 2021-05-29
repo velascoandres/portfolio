@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-personal-projects-route',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalProjectsRouteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly titleService: Title) {
+    this.titleService.setTitle('Personal Projects');
+  }
+
 
   ngOnInit(): void {
   }

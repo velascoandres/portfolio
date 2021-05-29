@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 
 interface IContact {
@@ -34,7 +35,8 @@ export class AboutMeRouteComponent implements OnInit {
   ];
 
 
-  constructor() {
+  constructor(private readonly titleService: Title) {
+    this.titleService.setTitle('About me');
   }
 
   ngOnInit(): void {

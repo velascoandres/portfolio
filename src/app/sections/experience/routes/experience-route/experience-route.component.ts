@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import { IPosition} from '../../interfaces';
+import {Title} from '@angular/platform-browser';
+
+import {IPosition} from '../../interfaces';
 import {JOBS} from '../../constants/jobs';
 
 @Component({
@@ -12,7 +14,8 @@ export class ExperienceRouteComponent implements OnInit {
   jobs: IPosition[] = JOBS;
 
 
-  constructor() {
+  constructor(private readonly titleService: Title) {
+    this.titleService.setTitle('Experience');
   }
 
   ngOnInit(): void {

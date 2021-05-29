@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PrimeIcons} from 'primeng/api';
+import {Title} from '@angular/platform-browser';
 
 interface IEvent {
   status: string;
@@ -20,8 +21,10 @@ export class EducationRouteComponent implements OnInit {
 
   events: IEvent[];
 
-  constructor() {
+  constructor(private readonly titleService: Title) {
+    this.titleService.setTitle('Education');
   }
+
 
   ngOnInit(): void {
     this.events = [
