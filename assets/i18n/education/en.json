@@ -8,5 +8,14 @@
       "name": "National Polytechnic School (Ecuador)",
       "description": "Information Systems and Computing Engineer"
     }
+  },
+  "courses": {
+    "components": {
+      "courseItem": {
+        "expeditionDate": "Expedition Date",
+        "credentialID": "Credential ID",
+        "watchCertificate": "Watch Certificate"
+      }
+    }
   }
 }
