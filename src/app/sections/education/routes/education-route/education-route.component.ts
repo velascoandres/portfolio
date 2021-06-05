@@ -9,6 +9,7 @@ interface IEvent {
   color: string;
   image: string;
   description: string;
+  city: string;
 }
 
 
@@ -34,7 +35,8 @@ export class EducationRouteComponent implements OnInit {
         icon: PrimeIcons.BOOK,
         color: '#ffffff',
         image: 'mh.png',
-        description: 'montufar.description'
+        description: 'montufar.description',
+        city: 'Quito-Ecuador',
       },
       {
         status: 'poli.name',
@@ -42,7 +44,8 @@ export class EducationRouteComponent implements OnInit {
         icon: PrimeIcons.PAPERCLIP,
         color: '#ffffff',
         image: 'epn.png',
-        description: 'poli.description'
+        description: 'poli.description',
+        city: 'Quito-Ecuador',
       },
     ];
   }

@@ -2,11 +2,11 @@
   "schools": {
     "montufar": {
       "name": "Juan Pío Montufar High School",
-      "description": "Science Bachelor"
+      "description": "High School Degree"
     },
     "poli": {
       "name": "National Polytechnic School (Ecuador)",
-      "description": "Information Systems and Computing Engineer"
+      "description": "Information Systems and Computing Engineer Degree"
     }
   },
   "courses": {

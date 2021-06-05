@@ -35,9 +35,10 @@
 
 .course-container {
   position: relative;
-  background-color: black;
+  background: var(--dark-gradient);
   border-radius: 10px;
   height: auto;
+  border: solid 1px white;
   width: 100%;
 }
 

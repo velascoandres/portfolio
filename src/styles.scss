@@ -14,9 +14,25 @@
 
 :root{
   // --bg-color: #061029;
-  --bg-color: rgb(33, 35, 41);
-  --bg-secundary: #484848;
+  --black: rgb(33, 35, 41);
+  --gray: #484848;
+  --primary: #09e485;
+  --secondary: #0291e3;
+  --lightGreen: #ACC789;
+  --cyan: #A5D2A4;
+  --darkGreen: #517776;
+  --yellow: #F2CD48;
+
+  // gradients
+  --chill-gradient: linear-gradient(135deg, var(--primary) 0%,var(--secondary) 100%);
+  --cold-gradient:  linear-gradient(135deg, #8019C6 0%,#2F93CC 100%);
+  --warm-gradient: linear-gradient(135deg, #F2CD48 0%,#FD803F 100%);
+  --hot-gradient: linear-gradient(135deg, #F9445A 0%,#FD803F 100%);
+  --dark-gradient: linear-gradient(135deg, var(--black) 0%,var(--gray) 100%);
 }
+
+
+
 
 @font-face {
   font-family: slkscr;
@@ -29,7 +45,7 @@ html, body {
 
 body {
   font-family: "Montserrat", "slkscr", "Helvetica Neue", sans-serif;
-  background: var(--bg-color);
+  background: var(--black);
   color: white;
   margin-top: 0;
   margin-left: 0;
@@ -58,6 +74,9 @@ body {
 
 .title {
   transition: 1s;
+  font-weight: 800;
+  color: #fff;
+  font-size: 22px;
 }
 
 .infinite-bounce {
@@ -81,11 +100,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  border-bottom: solid 2px white;
-  &:before {
-    content: '# ';
-  }
-
+  border-bottom: solid 2px var(--yellow);
 }
 
 .responsive-image {
@@ -227,3 +242,60 @@ h1, h2, h3, h4 {
   transform: rotateY(180deg);
 }
 
+
+
+
+//
+// Gradient system
+//
+$gradients: () !default;
+$gradients: map-merge((
+  chill:  var(--chill-gradient),
+  warm:  var(--warm-gradient),
+  hot:  var(--hot-gradient),
+  cold: var(--cold-gradient),
+  dark: var(--dark-gradient),
+), $gradients);
+
+@mixin border-gradient($parent, $gradient) {
+  #{$parent} {
+    border: 20px solid transparent;
+    border-width: 6px;
+    border-style: solid;
+    border-image: $gradient;
+    border-image-slice: 1;
+  }
+}
+
+
+// Gradient backgrounds
+@mixin bg-gradient($parent, $gradient) {
+  #{$parent} {
+    background: $gradient;
+  }
+}
+
+// Gradient text
+@mixin text-gradient($parent, $gradient) {
+  #{$parent} {
+    background-image: $gradient;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+// Gradient Classes
+@each $gradient, $value in $gradients {
+  @include bg-gradient(".bg-gradient-#{$gradient}", $value);
+}
+
+// Gradient Classes
+@each $gradient, $value in $gradients {
+  @include text-gradient(".text-gradient-#{$gradient}", $value);
+}
+
+// order Classes
+@each $gradient, $value in $gradients {
+  @include border-gradient(".border-gradient-#{$gradient}", $value);
+}

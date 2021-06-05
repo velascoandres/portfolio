@@ -2,6 +2,35 @@
   width: 150px;
 }
 
+.education-card{
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 1.5px solid white;
+}
+
+.school-info{
+  position: relative;
+}
+
+.badge{
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.date-badge{
+  width: 100px;
+  padding: 3px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+}
+
 h4{
   border: none;
   &:before{

@@ -5,36 +5,39 @@
       <div class="p-col-12 p-md-10">
         <h2>{{g('education')}}  </h2>
       </div>
-      <div class="p-col">
-        <div class="card">
-          <p-timeline [value]="events" align="alternate" styleClass="customized-timeline">
-            <ng-template pTemplate="marker" let-event>
-            <span class="custom-marker p-shadow-2" [style.backgroundColor]="event.color">
-                <i [ngClass]="event.icon"></i>
-            </span>
-            </ng-template>
-            <ng-template pTemplate="content" let-event>
-              <div class="animate__animated animate__bounceIn">
-                <h4>
-                  {{l(event.status)}}
-                </h4>
-                <p>
-                  {{event.dates}}
-                </p>
-                <app-image-loader
-                  [src]="'assets/images/logos/' + event.image"
-                  styles="width: 175px"
-
-                >
-                </app-image-loader>
+      <div class="p-sm-10 p-md-7">
+        <div class="education-card p-grid bg-gradient-dark" *ngFor="let event of events">
+          <div class="school-picture p-sm-10 p-md-3">
+            <app-image-loader
+              [src]="'assets/images/logos/' + event.image"
+              styles="width: 100%;"
+            >
+            </app-image-loader>
+          </div>
+          <div class="school-info p-sm-10 p-md-8">
+            <h3>  {{l(event.status)}}</h3>
+            <div class="p-grid">
+              <div class="p-col-12">
                 <p>
                   {{l(event.description)}}
                 </p>
-
               </div>
+              <div class="p-col-12">
+                <div class="date-badge bg-gradient-chill">
+              <span>
+               {{event.dates}}
+              </span>
+                </div>
+              </div>
+              <div class="p-col-12">
+                <div class="badge bg-gradient-warm">
+                  <span>{{event.city}}</span>
+                </div>
+              </div>
+            </div>
 
-            </ng-template>
-          </p-timeline>
+
+          </div>
         </div>
       </div>
     </div>
