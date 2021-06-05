@@ -2,11 +2,11 @@
   "schools": {
     "montufar": {
       "name": "Colegio Nacional Juan Pío Montufar",
-      "description": "Bachiller en Ciencias"
+      "description": "Bachillerato en Ciencias"
     },
     "poli": {
       "name": "Escuela Politécnica Nacional (Ecuador)",
-      "description": "Ingeniero en Sistémas Informáticos y de Computación"
+      "description": "Grado en Ingeniería en Sistémas Informáticos y de Computación"
     }
   },
   "courses": {
