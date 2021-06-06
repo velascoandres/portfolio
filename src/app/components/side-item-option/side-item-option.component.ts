@@ -17,6 +17,9 @@ export class SideItemOptionComponent implements OnInit {
   @Input()
   isSelected: boolean;
 
+  @Input()
+  icon: string;
+
   constructor(
     /*
         public readonly sideBar: SideBarComponent,

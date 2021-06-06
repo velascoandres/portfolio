@@ -6,6 +6,7 @@ import { ExperienceRouteComponent } from './routes/experience-route/experience-r
 import {TRANSLOCO_SCOPE, TranslocoModule} from '@ngneat/transloco';
 import { JobsListComponent } from './components/jobs-list/jobs-list.component';
 import { JobItemComponent } from './components/job-item/job-item.component';
+import {SharedModule} from '../../shared/shared.module';
 
 
 @NgModule({
@@ -14,11 +15,12 @@ import { JobItemComponent } from './components/job-item/job-item.component';
     JobsListComponent,
     JobItemComponent
   ],
-  imports: [
-    CommonModule,
-    ExperienceRoutingModule,
-    TranslocoModule
-  ],
+    imports: [
+        CommonModule,
+        ExperienceRoutingModule,
+        TranslocoModule,
+        SharedModule
+    ],
   providers: [
     {
       provide: TRANSLOCO_SCOPE,

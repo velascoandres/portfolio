@@ -29,6 +29,7 @@
   --warm-gradient: linear-gradient(135deg, #F2CD48 0%,#FD803F 100%);
   --hot-gradient: linear-gradient(135deg, #F9445A 0%,#FD803F 100%);
   --dark-gradient: linear-gradient(135deg, var(--black) 0%,var(--gray) 100%);
+  --inverse-dark-gradient: linear-gradient(135deg, var(--gray) 0%,var(--black) 100%);
 }
 
 
@@ -137,23 +138,19 @@ h1, h2, h3, h4 {
   font-family: "Montserrat", "slkscr", "Helvetica Neue", sans-serif;
   padding: 1rem;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s;
   border: none;
   border-radius: 5px;
+  font-size: 15px;
+  background: var(--chill-gradient);
+  border-bottom: 2px solid var(--gray);
+
 
   &:hover {
-    background: black;
+    background: var(--inverse-dark-gradient);
     color: white;
     transition: 0.3s;
-  }
-
-  &:active {
-    background: #484848;
-    color: white;
-    transform: scale(1.1, 1.1);
-    transition: 0.3s;
-    border: none;
-    outline: none;
+    border-bottom: 1px solid var(--primary);
   }
 
   &:focus {

@@ -10,19 +10,21 @@
 
 <ng-container *transloco="let g; read('sections')">
   <div class="nav-bar">
-    <div class="p-grid">
-<!--      <div class="p-col">
-        <app-side-avatar></app-side-avatar>
-      </div>-->
-
-      <div class="p-col"  *ngFor="let route of routes">
-        <app-side-item-option
-          [label]="g(route.label)"
-          [link]="route.link"
-        ></app-side-item-option>
-      </div>
-      <div class="p-col">
-        <app-lang-picker></app-lang-picker>
+    <div class="p-col-12">
+      <!--      <div class="p-col">
+              <app-side-avatar></app-side-avatar>
+            </div>-->
+      <div class="p-grid">
+        <div class="p-col" *ngFor="let route of routes">
+          <app-side-item-option
+            [label]="g(route.label)"
+            [link]="route.link"
+            [icon]="route.icon"
+          ></app-side-item-option>
+        </div>
+        <div class="p-col">
+          <app-lang-picker></app-lang-picker>
+        </div>
       </div>
     </div>
   </div>

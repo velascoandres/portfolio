@@ -4,6 +4,7 @@ import {Event, NavigationCancel, NavigationEnd, NavigationError, NavigationStart
 export interface IRoute {
   label: string;
   link: string;
+  icon: string;
 }
 
 
@@ -27,18 +28,22 @@ export class SideBarComponent implements OnInit {
       {
         label: 'about-me',
         link: '/about-me',
+        icon: 'fas fa-address-card',
       },
       {
         label: 'education',
         link: '/education',
+        icon: 'fas fa-university',
       },
       {
         label: 'experience',
         link: '/experience',
+        icon: 'fas fa-archive',
       },
       {
         label: 'skills',
         link: '/skills',
+        icon: 'fas fa-university',
       },
 /*      {
         label: 'personal-projects',

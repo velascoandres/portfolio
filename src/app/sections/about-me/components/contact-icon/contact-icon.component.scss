@@ -5,6 +5,7 @@
   width: 120px;
   transition: all .3s ease-in;
   &:hover{
+    cursor: pointer;
     transform: scale(1.1, 1.1);
     color: white;
   }

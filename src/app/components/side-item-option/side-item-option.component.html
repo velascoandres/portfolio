@@ -3,6 +3,8 @@
   [routerLink]="link" [id]="link"
   [ngClass]="{'item-selected': navBar.selectedItem === link}"
 >
-  <span class="hash">#</span>
-  <span>{{label}}</span>
+  <span class="hash">
+    <i [class]="icon"> </i>
+  </span>
+  <span class="label">{{label}}</span>
 </div>

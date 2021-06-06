@@ -21,18 +21,22 @@ export class NavBarComponent implements OnInit {
       {
         label: 'about-me',
         link: '/about-me',
+        icon: 'fas fa-address-card',
       },
       {
         label: 'education',
         link: '/education',
+        icon: 'fas fa-user-graduate',
       },
       {
         label: 'experience',
         link: '/experience',
+        icon: 'fas fa-archive',
       },
       {
         label: 'skills',
         link: '/skills',
+        icon: 'fas fa-code',
       },
       /*      {
               label: 'personal-projects',

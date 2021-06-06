@@ -20,7 +20,7 @@ export class AppComponent {
   particlesOptions: IParticlesProps = {
     backgroundMode: {
       zIndex: -1000,
-      enable: true
+      enable: true,
     },
     particles: {
       number: {
@@ -31,13 +31,13 @@ export class AppComponent {
         }
       },
       color: {
-        value: '#ffffff'
+        value: '#09e485'
       },
       shape: {
         type: 'circle',
         stroke: {
           width: 0,
-          color: '#000000'
+          color: '#09e485'
         },
         polygon: {
           nb_sides: 5
@@ -71,7 +71,7 @@ export class AppComponent {
       line_linked: {
         enable: true,
         distance: 150,
-        color: '#ffffff',
+        color: '#0291e3',
         opacity: 0.4,
         width: 1
       },

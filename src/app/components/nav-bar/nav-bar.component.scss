@@ -1,9 +1,12 @@
 .nav-bar{
-  width: 100%;
   overflow: hidden;
   position: fixed;
   background:  linear-gradient(135deg, var(--primary) 0%,#0291e3 100%);;
   z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  width: 100%;
 }
 
 
