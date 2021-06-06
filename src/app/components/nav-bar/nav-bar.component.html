@@ -1,3 +1,4 @@
+<!--
 <div class="nav-bar p-grid">
     <div class="p-col-2">
         <button class="button button-dark" (click)="app.toggle()">
@@ -5,3 +6,24 @@
         </button>
     </div>
 </div>
+-->
+
+<ng-container *transloco="let g; read('sections')">
+  <div class="nav-bar">
+    <div class="p-grid">
+<!--      <div class="p-col">
+        <app-side-avatar></app-side-avatar>
+      </div>-->
+
+      <div class="p-col"  *ngFor="let route of routes">
+        <app-side-item-option
+          [label]="g(route.label)"
+          [link]="route.link"
+        ></app-side-item-option>
+      </div>
+      <div class="p-col">
+        <app-lang-picker></app-lang-picker>
+      </div>
+    </div>
+  </div>
+</ng-container>

@@ -1,12 +1,37 @@
 <ng-container *transloco="let g; read('sections')">
   <ng-container *transloco="let l; read('about')">
     <div class="p-grid">
-      <div class="p-col-12 p-md-8">
+      <div class="p-col-12 p-md-12">
         <h2>{{g('about-me')}}  </h2>
       </div>
     </div>
     <div class="p-grid">
-      <div class="p-col-12 p-md-8">
+      <div class="p-md-12">
+        <div class="p-grid">
+          <div class="p-md-4"></div>
+          <div class="p-col-12 p-md-4">
+            <app-image-loader
+              src="https://avatars.githubusercontent.com/u/12194462?v=4"
+              styleClass="rounded-img"
+            >
+            </app-image-loader>
+          </div>
+          <div class="p-md-4"></div>
+        </div>
+      </div>
+      <div class="p-md-12">
+        <div class="p-grid">
+          <div class="p-col-4"></div>
+          <div class="p-col-12 p-md-4 typewriter">
+            <p>
+              &lt;code&gt; {{l('introduction.greeting')}} &lt;/code&gt;
+            </p>
+          </div>
+          <div class="p-col-4"></div>
+        </div>
+
+      </div>
+      <div class="p-md-12">
         <div class="quote border-gradient-chill">
           <p class="title text-gradient-chill">
             {{l('introduction.description')}}
@@ -15,7 +40,7 @@
       </div>
     </div>
     <div class="p-grid">
-      <div class="p-col-12 p-md-8">
+      <div class="p-col-12">
         <h2>{{l('contact.title')}}  </h2>
       </div>
       <div class="p-col-12">
@@ -37,18 +62,14 @@
         </ng-container>
       </div>
 
-      <div class="p-col-12 p-md-8">
-
+      <div class="p-col-12 p-mt-2">
         <p>
           <i class="fa fa-envelope-o" aria-hidden="true"> velasco.andrs@gmail.com</i>
         </p>
-
         <p>
           <i class="fa fa-phone"> (+593) 991619600</i>
         </p>
-
       </div>
-
     </div>
   </ng-container>
 </ng-container>

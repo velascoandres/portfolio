@@ -1,11 +1,11 @@
 <ng-container *transloco="let g; read('skills')">
   <div class="p-grid">
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h2>{{g('title')}}  </h2>
     </div>
   </div>
   <div class="p-grid">
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h3>{{g('languages')}}  </h3>
       <app-skill-list
         [skills]="skills | filterList : 'type' : 'language'"
@@ -14,35 +14,35 @@
 
 
     </div>
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h3>{{g('frameworks')}}  </h3>
       <app-skill-list
         [skills]="skills | filterList : 'type' : 'framework'"
       >
       </app-skill-list>
     </div>
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h3>{{g('libraries')}}  </h3>
       <app-skill-list
         [skills]="skills | filterList : 'type' : 'library'"
       >
       </app-skill-list>
     </div>
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h3>{{g('sdks')}}  </h3>
       <app-skill-list
         [skills]="skills | filterList : 'type' : 'sdk'"
       >
       </app-skill-list>
     </div>
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h3>{{g('database')}}  </h3>
       <app-skill-list
         [skills]="skills | filterList : 'type' : 'database'"
       >
       </app-skill-list>
     </div>
-    <div class="p-col-12 p-md-10">
+    <div class="p-col-12">
       <h3>{{g('cloud')}}  </h3>
       <app-skill-list
         [skills]="skills | filterList : 'type' : 'cloud'"

@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Title} from '@angular/platform-browser';
 
-
 interface IContact {
   type: string;
   redirectTo: string;
@@ -34,12 +33,12 @@ export class AboutMeRouteComponent implements OnInit {
     },
   ];
 
-
-  constructor(private readonly titleService: Title) {
+  constructor(
+    private readonly titleService: Title,
+  ) {
     this.titleService.setTitle('About me');
   }
 
   ngOnInit(): void {
   }
-
 }

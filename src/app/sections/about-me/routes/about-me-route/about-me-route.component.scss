@@ -9,6 +9,15 @@
     blink-caret .75s step-end infinite;
 }
 
+p{
+  text-align: center;
+}
+
+.greeting{
+  margin: auto;
+  width: 50%;
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }

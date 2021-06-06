@@ -65,14 +65,12 @@ export class SideBarComponent implements OnInit {
     if (this.isToggle) {
       sidebar.classList.remove('close');
       sidebar.classList.add('open');
-      // content.style.marginLeft = '270px';
       content.classList.add('collapse-open');
       content.classList.remove('collapse-close');
       this.isToggle = false;
     } else {
       sidebar.classList.remove('open');
       sidebar.classList.add('close');
-      // content.style.marginLeft = '0';
       content.classList.remove('collapse-open');
       content.classList.add('collapse-close');
       this.isToggle = true;

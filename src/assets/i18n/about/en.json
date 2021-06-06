@@ -1,7 +1,8 @@
 {
 
   "introduction": {
-    "description": "\nGreetings, I am Andrés Velasco Information Systems and Computing Engineer \n. I am a person proactive and with a lot of curiosity to learn and know much more in order\nto be a professional of excellence."
+    "greeting": "Hello World!, I am Andrés Velasco",
+    "description": "Greetings, I am graduated Information Systems and Computing Engineer. I am a person proactive and with a lot of curiosity to learn and know much more in order to be a professional of excellence."
   },
   "contact": {
     "title": "How to reach me ?",

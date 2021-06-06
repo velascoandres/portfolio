@@ -1,9 +1,15 @@
 <app-section-loader></app-section-loader>
 <app-nav-bar></app-nav-bar>
-<div  id="lateral-nav" class="open">
+<!--<div  id="lateral-nav" class="open">
   <app-side-bar #sideBar>
   </app-side-bar>
-</div>
+</div>-->
 <div id="content" class="collapse-open">
-  <router-outlet></router-outlet>
+  <div class="p-grid">
+    <div class="p-col-1"></div>
+    <div class="p-col-10">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="p-col-1"></div>
+  </div>
 </div>

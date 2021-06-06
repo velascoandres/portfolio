@@ -22,40 +22,40 @@ import {SharedModule} from './shared/shared.module';
 import {SectionNotFoundComponent} from './routes/section-not-found/section-not-found.component';
 import {SideItemOptionComponent} from './components/side-item-option/side-item-option.component';
 import {LangPickerComponent} from './components/lang-picker/lang-picker.component';
-import {SideAvatarComponent} from './components/side-avatar/side-avatar.component';
 import {SectionLoaderComponent} from './components/section-loader/section-loader.component';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SideBarComponent,
-    SectionNotFoundComponent,
-    SideItemOptionComponent,
-    LangPickerComponent,
-    SectionLoaderComponent,
-    SideAvatarComponent,
-    NavBarComponent,
-    MainComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    TranslocoRootModule,
-    BrowserAnimationsModule,
-    MatSidenavModule,
-    MatProgressBarModule,
-    MatOptionModule,
-    MatSelectModule,
-    DropdownModule,
-    FormsModule,
-    ProgressBarModule,
-    SharedModule,
-    NgParticlesModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SideBarComponent,
+        SectionNotFoundComponent,
+        SideItemOptionComponent,
+        LangPickerComponent,
+        SectionLoaderComponent,
+        NavBarComponent,
+        MainComponent,
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        TranslocoRootModule,
+        BrowserAnimationsModule,
+        MatSidenavModule,
+        MatProgressBarModule,
+        MatOptionModule,
+        MatSelectModule,
+        DropdownModule,
+        FormsModule,
+        ProgressBarModule,
+        SharedModule,
+        NgParticlesModule,
+    ],
+    providers: [],
+    exports: [
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

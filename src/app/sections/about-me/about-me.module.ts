@@ -9,6 +9,7 @@ import {
 } from '@ngneat/transloco';
 import {TooltipModule} from 'primeng/tooltip';
 import { ContactIconComponent } from './components/contact-icon/contact-icon.component';
+import {SharedModule} from '../../shared/shared.module';
 
 
 @NgModule({
@@ -16,12 +17,13 @@ import { ContactIconComponent } from './components/contact-icon/contact-icon.com
     AboutMeRouteComponent,
     ContactIconComponent
   ],
-    imports: [
-        CommonModule,
-        AboutMeRoutingModule,
-        TranslocoModule,
-        TooltipModule,
-    ],
+  imports: [
+    CommonModule,
+    AboutMeRoutingModule,
+    TranslocoModule,
+    TooltipModule,
+    SharedModule,
+  ],
   providers: [{provide: TRANSLOCO_SCOPE, useValue: 'about'}],
 })
 export class AboutMeModule {

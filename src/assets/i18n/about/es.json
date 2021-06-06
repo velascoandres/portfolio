@@ -1,7 +1,8 @@
 {
 
   "introduction": {
-    "description": "Saludos, soy Andrés Velasco Ingeniero en Sistemas Informáticos y de Computación. \nSoy una persona proactiva y con mucha curiosidad por aprender y saber mucho más para\nser un profesional de excelencia."
+    "greeting": "Hola Mundo!, Soy Andrés Velasco",
+    "description": "Saludos, soy un Ingeniero Graduado en Sistemas Informáticos y de Computación. Soy una persona proactiva y con mucha curiosidad por aprender y saber mucho más para ser un profesional de excelencia."
   },
   "contact": {
     "title": "¿ Cómo contactarme ?",

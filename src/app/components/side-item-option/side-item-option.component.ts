@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {SideBarComponent} from '../side-bar/side-bar.component';
+import {NavBarComponent} from '../nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-side-item-option',
@@ -15,8 +16,12 @@ export class SideItemOptionComponent implements OnInit {
 
   @Input()
   isSelected: boolean;
+
   constructor(
-    public readonly sideBar: SideBarComponent
+    /*
+        public readonly sideBar: SideBarComponent,
+    */
+    public readonly navBar: NavBarComponent,
   ) {
   }
 
