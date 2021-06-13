@@ -11,13 +11,15 @@ import {TRANSLOCO_SCOPE, TranslocoModule} from '@ngneat/transloco';
 import {SharedModule} from '../../shared/shared.module';
 import {CourseItemComponent} from './components/course-item/course-item.component';
 import {CourseListComponent} from './components/course-list/course-list.component';
+import { EducationListComponent } from './components/education-list/education-list.component';
 
 
 @NgModule({
   declarations: [
     EducationRouteComponent,
     CourseItemComponent,
-    CourseListComponent
+    CourseListComponent,
+    EducationListComponent
   ],
   imports: [
     CommonModule,

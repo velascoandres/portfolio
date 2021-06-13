@@ -1,8 +1,8 @@
 <div class="p-grid">
   <div
-    class="p-col animate__animated animate__rotateInDownLeft"
+    class="p-col-12 p-md-3 animate__animated"
     *ngFor="let skill of skills; let i = index"
-    [ngClass]="{'animate__rotateInDownLeft': i % 2 !== 0, 'animate__rotateInDownRight': i % 2 === 0}"
+    [ngClass]="{'animate__backInDown': i % 2 !== 0, 'animate__backInUp': i % 2 === 0}"
 
   >
     <app-skill-item [skill]="skill"></app-skill-item>

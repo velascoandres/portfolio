@@ -1,0 +1,41 @@
+<ng-container *transloco="let l; read('education.schools')">
+  <div class="p-grid">
+    <div class="p-sm-10 p-md-7">
+      <div
+        class="education-card p-grid bg-gradient-dark animate__animated"
+        *ngFor="let event of events; let i = index"
+        [ngClass]="{'animate__backInDown': i % 2, 'animate__backInUp': !(i % 2) }"
+      >
+        <div class="school-picture p-sm-10 p-md-3">
+          <app-image-loader
+            [src]="'assets/images/logos/' + event.image"
+            styles="width: 100%;"
+          >
+          </app-image-loader>
+        </div>
+        <div class="school-info p-sm-10 p-md-8">
+          <h3>  {{l(event.status)}}</h3>
+          <div class="p-grid">
+            <div class="p-col-12">
+              <p>
+                {{l(event.description)}}
+              </p>
+            </div>
+            <div class="p-col-12">
+              <div class="date-badge bg-gradient-chill">
+              <span>
+               {{event.dates}}
+              </span>
+              </div>
+            </div>
+            <div class="p-col-12">
+              <div class="badge bg-gradient-chill">
+                <span>{{event.city}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

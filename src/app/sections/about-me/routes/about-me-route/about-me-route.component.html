@@ -7,35 +7,21 @@
     </div>
     <div class="p-grid">
       <div class="p-md-12">
-        <div class="p-grid">
-          <div class="p-md-4"></div>
-          <div class="p-col-12 p-md-4 animate__animated animate__bounce">
+        <div class="p-grid about-me">
+          <div class="p-col-12 p-md-3 animate__animated animate__bounce">
             <app-image-loader
               src="https://avatars.githubusercontent.com/u/12194462?v=4"
-              styleClass="rounded-img"
+              styleClass="rounded-img rounded-img-responsive"
             >
             </app-image-loader>
           </div>
-          <div class="p-md-4"></div>
-        </div>
-      </div>
-      <div class="p-md-12">
-        <div class="p-grid">
-          <div class="p-col-4"></div>
-          <div class="p-col-12 p-md-4 typewriter">
-            <p>
-              &lt;code&gt; {{l('introduction.greeting')}} &lt;/code&gt;
-            </p>
+          <div class="p-col-12 p-md-9">
+            <div class="quote">
+              <p class="title text-gradient-chill animate__animated animate__flash">
+                {{l('introduction.description')}}
+              </p>
+            </div>
           </div>
-          <div class="p-col-4"></div>
-        </div>
-
-      </div>
-      <div class="p-md-12">
-        <div class="quote border-gradient-chill">
-          <p class="title text-gradient-chill animate__animated animate__flash">
-            {{l('introduction.description')}}
-          </p>
         </div>
       </div>
     </div>
@@ -47,7 +33,7 @@
         <ng-container *transloco="let h; read('about.contact.options')">
           <div class="p-grid">
             <div
-              class="p-sm-12 p-md-2"
+              class="p-sm-12 p-md-3"
               *ngFor="let contact of contacts"
             >
               <app-contact-icon

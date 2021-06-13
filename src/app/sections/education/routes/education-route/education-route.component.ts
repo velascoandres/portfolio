@@ -1,16 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {PrimeIcons} from 'primeng/api';
 import {Title} from '@angular/platform-browser';
-
-interface IEvent {
-  status: string;
-  dates: string;
-  icon: PrimeIcons;
-  color: string;
-  image: string;
-  description: string;
-  city: string;
-}
+import {IEvent} from '../../components/education-list/education-list.component';
 
 
 @Component({
